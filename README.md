@@ -1,5 +1,49 @@
 # Solar Project
 
+## Execution
+```
+
+Time: 2025-08-25 18:47:19.125616
+Raspberry Pi CPU Temperature: 50.5Â°C
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Current Status vor 44 sec...(2025-08-25 18:47:19.125616)
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Item | Time on | Status | Control | Index | C. Watt | Temp | Last | MaxTime | Item CTRL | R. Watt |      MAC       |          IP          |     Long Name Inst./ Assig.      | 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|  WH0 |       0 |    OFF |      NO |     0 |       0 |  300 |    - |     300 |        -- |     600 |   A085E3C76B5C |      192.168.128.201 |     Water Heater down stairs - A | 
+|  WH1 |       0 |    OFF |     YES |     1 |       0 | 57.0 |    - |     400 |        -- |    1290 |   CCBA97C90BAC |      192.168.128.202 |       Water Heater up stairs - I | 
+|  WH2 |       0 |    OFF |      NO |     2 |       0 | 56.7 |    - |     100 |        -- |    1100 |   A085E3BE75C4 |      192.168.128.203 |       Water Heater Apartment - I | 
+|  R00 |       0 |    OFF |      NO |     3 |       0 |  300 |    - |     500 |        -- |     100 |   A085E3C732F0 |      192.168.128.204 |        Radiator Livingroom 1 - A | 
+|  R01 |       0 |    OFF |      NO |     4 |       0 |  300 |    - |     500 |        -- |     400 |   A085E3C71DFC |      192.168.128.205 |        Radiator Livingroom 2 - A | 
+|  R02 |       0 |    OFF |      NO |     5 |       0 |  300 |    - |     150 |        -- |      50 |   A085E3C7DC10 |      192.168.128.206 |             Radiator kitchen - A | 
+|  R03 |       0 |    OFF |      NO |     6 |       0 |  300 |    - |     100 |        -- |     400 |   CCBA97C8FD64 |      192.168.128.207 |          Radiator Guest Room - A | 
+|  R04 |       0 |    OFF |      NO |     7 |       0 |  300 |    - |     100 |        -- |     400 |   A085E3BF647C |      192.168.128.208 |           Radiator Cody Room - A | 
+|  R05 |       0 |    OFF |      NO |     8 |       0 | 41.2 |    - |     140 |        -- |    1260 |   A085E3C8697C |      192.168.128.209 |  Radiator Master Bed Room L. - I | 
+|  R06 |       0 |    OFF |      NO |     9 |       0 | 41.3 |    - |     140 |        -- |    1260 |   CCBA97C90B9C |      192.168.128.210 |  Radiator Master Bed Room R. - I | 
+|  R07 |       0 |    OFF |      NO |    10 |       0 | 57.2 |    - |     050 |        -- |    1100 |   CCBA97C8FC38 |      192.168.128.211 | Radiator Apartment Liv. Room - I | 
+|  R08 |       0 |    OFF |      NO |    11 |       0 | 50.3 |    - |     050 |        -- |     800 |   A085E3C751A8 |      192.168.128.212 |  Radiator Apartment Bed Room - I | 
+|  R09 |       0 |    OFF |      NO |    12 |       0 |  300 |    - |     300 |        -- |     400 |   A085E3C76B5C |      192.168.128.213 | Radiator Apartment Bath Room - A | 
+|  R10 |       0 |    OFF |      NO |    13 |       0 |  300 |    - |     070 |        -- |     400 |   CCBA97C8FE80 |      192.168.128.214 |   Radiator Upstairs Hall Way - A | 
+|  R11 |       0 |    OFF |      NO |    14 |       0 |  300 |    - |     350 |        -- |     400 |   A085E3C7D02C |      192.168.128.215 |  Radiator Downstairs Bath R. - A | 
+|  R12 |       0 |    OFF |      NO |    15 |       0 |  300 |    - |     350 |        -- |     400 |   A085E3C8E1FC |      192.168.128.216 |  Radiator Upstairs Bath Room - A | 
+|  S01 |       0 |    OFF |      NO |    16 |       0 |  300 |    - |     300 |        14 |     000 |   A085E3C76B5C |      192.168.128.201 | Sensor Waterheater down stairs - A | 
+|  S02 |       0 |    OFF |     YES |    17 |       0 | 22.7 |    L |     200 |        08 |     000 |   A085E3C76B5C |      192.168.128.202 | Sensor WaterHeater up stairs - I | 
+|  S03 |       0 |    OFF |     YES |    18 |       0 | 22.8 |    L |     200 |        12 |     000 |   A085E3C76B5C |      192.168.128.203 | Sensor Waterheater Apartment - I | 
+|  S04 |       0 |    OFF |     YES |    19 |       0 | 24.2 |    L |     200 |        15 |     000 |   CCBA97C8FC38 |      192.168.128.211 |   Sensor Apartment Liv. Room - I | 
+|  S05 |       0 |    OFF |      NO |    20 |       0 |  300 |    - |     200 |        15 |     000 |   A085E3C76B5C |      192.168.128.218 |                     Sensor 02 -  | 
+|  S06 |       0 |    OFF |      NO |    21 |       0 |  300 |    - |     200 |        15 |     000 |   A085E3C76B5C |      192.168.128.218 |                     Sensor 03 -  | 
+|  S07 |       0 |    OFF |      NO |    22 |       0 |  300 |    - |     200 |        15 |     000 |   A085E3C76B5C |      192.168.128.218 |                     Sensor 04 -  | 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Production:         -2 Consumption:        645 
+Production:         -2 is less then Consumption:        645 + Reserved Watt       1290  for Water Heater up stairs - I
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+```
+## The Code
+
 ```
 #
 # Written by: 	Orf Gelbrich
@@ -784,7 +828,7 @@ main()
 
 ```
 
-# Crontab 
+## Crontab 
 
 ```
 sudo crontab -l
@@ -792,7 +836,7 @@ sudo crontab -l
 @reboot cd /home/gelbrio && /usr/bin/python3 /home/gelbrio/savemoney.py > /home/gelbrio/screenlog 2>&1
 ```
 
-# Watch the Execution
+## Watch the Execution
 
 ```
 
