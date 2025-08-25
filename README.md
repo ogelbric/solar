@@ -66,36 +66,44 @@
 ## Execution
 
 ```
-Not running on a Raspberry Pi.
-Time: 2025-07-27 22:18:57.414898
+Time: 2025-08-25 18:39:22.796261
+Raspberry Pi CPU Temperature: 50.5Â°C
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-Current Status vor 44 sec...(2025-07-27 22:18:57.414898)
+Current Status vor 44 sec...(2025-08-25 18:39:22.796261)
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Item | Time on | Status | Control | Index | C. Watt | Temp | Last | MaxTime | Item CTRL | R. Watt |      MAC       |          IP          |            Long Name             | 
+| Item | Time on | Status | Control | Index | C. Watt | Temp | Last | MaxTime | Item CTRL | R. Watt |      MAC       |          IP          |     Long Name Inst./ Assig.      | 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|  WH0 |       0 |    OFF |      NO |     0 |       0 |    0 |    - |     300 |        -- |     600 |   A085E3C76B5C |      192.168.128.200 | Water Heater down stairs         | 
-|  WH1 |       0 |    OFF |      NO |     1 |       0 |    0 |    - |     200 |        -- |     600 |   A085E3C76B5C |      192.168.128.201 | Water Heater up stairs           | 
-|  WH2 |       0 |    OFF |      NO |     2 |       0 |    0 |    - |     100 |        -- |     600 |   A085E3C76B5C |      192.168.128.202 | Water Heater Apartment           | 
-|  R00 |       0 |    OFF |     YES |     3 |       0 |    0 |    - |     500 |        -- |     100 |   A085E3C76B5C |           10.1.0.133 | Radiator Livingroom 1            | 
-|  R01 |       0 |    OFF |      NO |     4 |       0 |    0 |    - |     500 |        -- |     400 |   A085E3C76B5C |      192.168.128.204 | Radiator Livingroom 2            | 
-|  R02 |       0 |    OFF |      NO |     5 |       0 |    0 |    - |     150 |        -- |      50 |   A085E3C76B5C |      192.168.128.205 | Radiator kitchen                 | 
-|  R03 |       0 |    OFF |      NO |     6 |       0 |    0 |    - |     100 |        -- |     400 |   A085E3C76B5C |      192.168.128.206 | Radiator Guest Room              | 
-|  R04 |       0 |    OFF |      NO |     7 |       0 |    0 |    - |     100 |        -- |     400 |   A085E3C76B5C |      192.168.128.207 | Radiator Cody Room               | 
-|  R05 |       0 |    OFF |      NO |     8 |       0 |    0 |    - |     140 |        -- |     400 |   A085E3C76B5C |      192.168.128.208 | Radiator Master Bed Room         | 
-|  R06 |       0 |    OFF |      NO |     9 |       0 |    0 |    - |     140 |        -- |     400 |   A085E3C76B5C |      192.168.128.209 | Radiator Master Bed Room         | 
-|  R07 |       0 |    OFF |      NO |    10 |       0 |    0 |    - |     050 |        -- |     400 |   A085E3C76B5C |      192.168.128.210 | Radiator Appartment Living Room  | 
-|  R08 |       0 |    OFF |      NO |    11 |       0 |    0 |    - |     050 |        -- |     400 |   A085E3C76B5C |      192.168.128.211 | Radiator Appartment Bed Room     | 
-|  R09 |       0 |    OFF |      NO |    12 |       0 |    0 |    - |     300 |        -- |     400 |   A085E3C76B5C |      192.168.128.212 | Radiator Appartment Bath Room    | 
-|  R10 |       0 |    OFF |      NO |    13 |       0 |    0 |    - |     070 |        -- |     400 |   A085E3C76B5C |      192.168.128.213 | Radiator Upstairs Hall Way       | 
-|  R11 |       0 |    OFF |      NO |    14 |       0 |    0 |    - |     350 |        -- |     400 |   A085E3C76B5C |      192.168.128.214 | Radiator Downstairs Bath Room    | 
-|  R12 |       0 |    OFF |      NO |    15 |       0 |    0 |    - |     350 |        -- |     400 |   A085E3C76B5C |      192.168.128.215 | Radiator Upstairs Bath Room      | 
-|  S01 |       0 |    OFF |      NO |    16 |       0 |    0 |    - |     200 |        12 |     000 |   A085E3C76B5C |      192.168.128.216 | Sensor Apartment Bathroom        | 
-|  S02 |       0 |    OFF |     YES |    17 |       0 |    0 |    - |     200 |        03 |     000 |   A085E3C76B5C |           10.1.0.133 | Sensor Living Room               | 
-|  S03 |       0 |    OFF |      NO |    18 |       0 |    0 |    - |     200 |        15 |     000 |   A085E3C76B5C |      192.168.128.218 | Sensor Upstairs Bathroom         | 
+|  WH0 |       0 |    OFF |      NO |     0 |       0 |  300 |    - |     300 |        -- |     600 |   A085E3C76B5C |      192.168.128.201 |     Water Heater down stairs - A | 
+|  WH1 |       0 |    OFF |     YES |     1 |       0 | 56.9 |    - |     400 |        -- |    1290 |   CCBA97C90BAC |      192.168.128.202 |       Water Heater up stairs - I | 
+|  WH2 |       0 |    OFF |      NO |     2 |       0 | 56.8 |    - |     100 |        -- |    1100 |   A085E3BE75C4 |      192.168.128.203 |       Water Heater Apartment - I | 
+|  R00 |       0 |    OFF |      NO |     3 |       0 |  300 |    - |     500 |        -- |     100 |   A085E3C732F0 |      192.168.128.204 |        Radiator Livingroom 1 - A | 
+|  R01 |       0 |    OFF |      NO |     4 |       0 |  300 |    - |     500 |        -- |     400 |   A085E3C71DFC |      192.168.128.205 |        Radiator Livingroom 2 - A | 
+|  R02 |       0 |    OFF |      NO |     5 |       0 |  300 |    - |     150 |        -- |      50 |   A085E3C7DC10 |      192.168.128.206 |             Radiator kitchen - A | 
+|  R03 |       0 |    OFF |      NO |     6 |       0 |  300 |    - |     100 |        -- |     400 |   CCBA97C8FD64 |      192.168.128.207 |          Radiator Guest Room - A | 
+|  R04 |       0 |    OFF |      NO |     7 |       0 |  300 |    - |     100 |        -- |     400 |   A085E3BF647C |      192.168.128.208 |           Radiator Cody Room - A | 
+|  R05 |       0 |    OFF |      NO |     8 |       0 | 41.1 |    - |     140 |        -- |    1260 |   A085E3C8697C |      192.168.128.209 |  Radiator Master Bed Room L. - I | 
+|  R06 |       0 |    OFF |      NO |     9 |       0 | 41.4 |    - |     140 |        -- |    1260 |   CCBA97C90B9C |      192.168.128.210 |  Radiator Master Bed Room R. - I | 
+|  R07 |       0 |    OFF |      NO |    10 |       0 | 57.3 |    - |     050 |        -- |    1100 |   CCBA97C8FC38 |      192.168.128.211 | Radiator Apartment Liv. Room - I | 
+|  R08 |       0 |    OFF |      NO |    11 |       0 | 50.3 |    - |     050 |        -- |     800 |   A085E3C751A8 |      192.168.128.212 |  Radiator Apartment Bed Room - I | 
+|  R09 |       0 |    OFF |      NO |    12 |       0 |  300 |    - |     300 |        -- |     400 |   A085E3C76B5C |      192.168.128.213 | Radiator Apartment Bath Room - A | 
+|  R10 |       0 |    OFF |      NO |    13 |       0 |  300 |    - |     070 |        -- |     400 |   CCBA97C8FE80 |      192.168.128.214 |   Radiator Upstairs Hall Way - A | 
+|  R11 |       0 |    OFF |      NO |    14 |       0 |  300 |    - |     350 |        -- |     400 |   A085E3C7D02C |      192.168.128.215 |  Radiator Downstairs Bath R. - A | 
+|  R12 |       0 |    OFF |      NO |    15 |       0 |  300 |    - |     350 |        -- |     400 |   A085E3C8E1FC |      192.168.128.216 |  Radiator Upstairs Bath Room - A | 
+|  S01 |       0 |    OFF |      NO |    16 |       0 |  300 |    - |     300 |        14 |     000 |   A085E3C76B5C |      192.168.128.201 | Sensor Waterheater down stairs - A | 
+|  S02 |       0 |    OFF |     YES |    17 |       0 | 22.6 |    L |     200 |        08 |     000 |   A085E3C76B5C |      192.168.128.202 | Sensor WaterHeater up stairs - I | 
+|  S03 |       0 |    OFF |     YES |    18 |       0 | 22.8 |    L |     200 |        12 |     000 |   A085E3C76B5C |      192.168.128.203 | Sensor Waterheater Apartment - I | 
+|  S04 |       0 |    OFF |     YES |    19 |       0 | 24.1 |    L |     200 |        15 |     000 |   CCBA97C8FC38 |      192.168.128.211 |   Sensor Apartment Liv. Room - I | 
+|  S05 |       0 |    OFF |      NO |    20 |       0 |  300 |    - |     200 |        15 |     000 |   A085E3C76B5C |      192.168.128.218 |                     Sensor 02 -  | 
+|  S06 |       0 |    OFF |      NO |    21 |       0 |  300 |    - |     200 |        15 |     000 |   A085E3C76B5C |      192.168.128.218 |                     Sensor 03 -  | 
+|  S07 |       0 |    OFF |      NO |    22 |       0 |  300 |    - |     200 |        15 |     000 |   A085E3C76B5C |      192.168.128.218 |                     Sensor 04 -  | 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-Production:         -5 Consumption:        116 
+Production:         38 Consumption:        598 
+Production:         38 is less then Consumption:        598 + Reserved Watt       1290  for Water Heater up stairs - I
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 
 ```
 
 ## Code
