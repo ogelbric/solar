@@ -45,7 +45,7 @@
 #
 #		The MAXTime column is for how long would I like to run this item once it is detected that there is more production then consumption. 
 #
-#		The R. Watt column is for comparison purposes used when the consumption plus the registerd watt column are less then production and
+#		The R. Watt (Registered) column is for comparison purposes used when the consumption plus the registerd watt column are less then production and
 #		and the ithem can be turnd on with out going over the production number.  This column needs to be adjusted after the C. Watt column
 #		is observed on what the endpoint is truly using.  Meaning you can have a radiator where is says on the box it will use 600 Watt 
 #		when in reality it may only use 550 Watt or may use 700 Watt.  
@@ -58,57 +58,6 @@
 #		also add the sensor addon and then controll the radiator in that room since the radiator electrical wall box is small.  
 #
 #		The Last column is for the sole purpose of not turning on the item that the previous loop iterion just turnd OFF. 
-
-
-
-```
-
-## Execution
-
-```
-Time: 2025-08-25 18:39:22.796261
-Raspberry Pi CPU Temperature: 50.5Â°C
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-Current Status vor 44 sec...(2025-08-25 18:39:22.796261)
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Item | Time on | Status | Control | Index | C. Watt | Temp | Last | MaxTime | Item CTRL | R. Watt |      MAC       |          IP          |     Long Name Inst./ Assig.      | 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|  WH0 |       0 |    OFF |      NO |     0 |       0 |  300 |    - |     300 |        -- |     600 |   A085E3C76B5C |      192.168.128.201 |     Water Heater down stairs - A | 
-|  WH1 |       0 |    OFF |     YES |     1 |       0 | 56.9 |    - |     400 |        -- |    1290 |   CCBA97C90BAC |      192.168.128.202 |       Water Heater up stairs - I | 
-|  WH2 |       0 |    OFF |      NO |     2 |       0 | 56.8 |    - |     100 |        -- |    1100 |   A085E3BE75C4 |      192.168.128.203 |       Water Heater Apartment - I | 
-|  R00 |       0 |    OFF |      NO |     3 |       0 |  300 |    - |     500 |        -- |     100 |   A085E3C732F0 |      192.168.128.204 |        Radiator Livingroom 1 - A | 
-|  R01 |       0 |    OFF |      NO |     4 |       0 |  300 |    - |     500 |        -- |     400 |   A085E3C71DFC |      192.168.128.205 |        Radiator Livingroom 2 - A | 
-|  R02 |       0 |    OFF |      NO |     5 |       0 |  300 |    - |     150 |        -- |      50 |   A085E3C7DC10 |      192.168.128.206 |             Radiator kitchen - A | 
-|  R03 |       0 |    OFF |      NO |     6 |       0 |  300 |    - |     100 |        -- |     400 |   CCBA97C8FD64 |      192.168.128.207 |          Radiator Guest Room - A | 
-|  R04 |       0 |    OFF |      NO |     7 |       0 |  300 |    - |     100 |        -- |     400 |   A085E3BF647C |      192.168.128.208 |           Radiator Cody Room - A | 
-|  R05 |       0 |    OFF |      NO |     8 |       0 | 41.1 |    - |     140 |        -- |    1260 |   A085E3C8697C |      192.168.128.209 |  Radiator Master Bed Room L. - I | 
-|  R06 |       0 |    OFF |      NO |     9 |       0 | 41.4 |    - |     140 |        -- |    1260 |   CCBA97C90B9C |      192.168.128.210 |  Radiator Master Bed Room R. - I | 
-|  R07 |       0 |    OFF |      NO |    10 |       0 | 57.3 |    - |     050 |        -- |    1100 |   CCBA97C8FC38 |      192.168.128.211 | Radiator Apartment Liv. Room - I | 
-|  R08 |       0 |    OFF |      NO |    11 |       0 | 50.3 |    - |     050 |        -- |     800 |   A085E3C751A8 |      192.168.128.212 |  Radiator Apartment Bed Room - I | 
-|  R09 |       0 |    OFF |      NO |    12 |       0 |  300 |    - |     300 |        -- |     400 |   A085E3C76B5C |      192.168.128.213 | Radiator Apartment Bath Room - A | 
-|  R10 |       0 |    OFF |      NO |    13 |       0 |  300 |    - |     070 |        -- |     400 |   CCBA97C8FE80 |      192.168.128.214 |   Radiator Upstairs Hall Way - A | 
-|  R11 |       0 |    OFF |      NO |    14 |       0 |  300 |    - |     350 |        -- |     400 |   A085E3C7D02C |      192.168.128.215 |  Radiator Downstairs Bath R. - A | 
-|  R12 |       0 |    OFF |      NO |    15 |       0 |  300 |    - |     350 |        -- |     400 |   A085E3C8E1FC |      192.168.128.216 |  Radiator Upstairs Bath Room - A | 
-|  S01 |       0 |    OFF |      NO |    16 |       0 |  300 |    - |     300 |        14 |     000 |   A085E3C76B5C |      192.168.128.201 | Sensor Waterheater down stairs - A | 
-|  S02 |       0 |    OFF |     YES |    17 |       0 | 22.6 |    L |     200 |        08 |     000 |   A085E3C76B5C |      192.168.128.202 | Sensor WaterHeater up stairs - I | 
-|  S03 |       0 |    OFF |     YES |    18 |       0 | 22.8 |    L |     200 |        12 |     000 |   A085E3C76B5C |      192.168.128.203 | Sensor Waterheater Apartment - I | 
-|  S04 |       0 |    OFF |     YES |    19 |       0 | 24.1 |    L |     200 |        15 |     000 |   CCBA97C8FC38 |      192.168.128.211 |   Sensor Apartment Liv. Room - I | 
-|  S05 |       0 |    OFF |      NO |    20 |       0 |  300 |    - |     200 |        15 |     000 |   A085E3C76B5C |      192.168.128.218 |                     Sensor 02 -  | 
-|  S06 |       0 |    OFF |      NO |    21 |       0 |  300 |    - |     200 |        15 |     000 |   A085E3C76B5C |      192.168.128.218 |                     Sensor 03 -  | 
-|  S07 |       0 |    OFF |      NO |    22 |       0 |  300 |    - |     200 |        15 |     000 |   A085E3C76B5C |      192.168.128.218 |                     Sensor 04 -  | 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-Production:         38 Consumption:        598 
-Production:         38 is less then Consumption:        598 + Reserved Watt       1290  for Water Heater up stairs - I
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 
-```
-
-## Code
-
-```
 #
 # libraries needed
 #
@@ -132,32 +81,36 @@ import logging.handlers as handlers
 
 # 
 Line1 = "+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+"
-Line2 = [ "Item" , "Time on" , "Status" , "Control" , "Index" , "C. Watt" , "Temp" , "Last" , "MaxTime" , "Item CTRL" , "R. Watt" ,  "MAC" , "IP" , "Long Name" ]
+Line2 = [ "Item" , "Time on" , "Status" , "Control" , "Index" , "C. Watt" , "Temp" , "Last" , "MaxTime" , "Item CTRL" , "R. Watt" ,  "MAC" , "IP" , "Long Name Inst./ Assig." ]
 col_width = [ 4 , 7 , 6 , 7 , 5 , 7 , 4 , 4 , 7 , 9 , 7 , 14 , 20 , 32 ]
 
 #  f"{str(item):<{col_width[i]}}"
 
 #
 matrix1 = [ 
-	[ "WH0" , 0 , "OFF" , "NO" , "0" ,  "0" , "0" , "-" , "300" , "--" , "600" , "A085E3C76B5C" , "192.168.128.200" , "Water Heater down stairs        " ] ,
-	[ "WH1" , 0 , "OFF" , "NO" , "1" ,  "0" , "0" , "-" , "200" , "--" , "600" , "A085E3C76B5C" , "192.168.128.201" , "Water Heater up stairs          " ] , 
-	[ "WH2" , 0 , "OFF" , "NO" , "2" ,  "0" , "0" , "-" , "100" , "--" , "600" , "A085E3C76B5C" , "192.168.128.202" , "Water Heater Apartment          " ] , 
-	[ "R00" , 0 , "OFF" , "YES" , "3" ,  "0" , "0" , "-" , "500" , "--" , "100" , "A085E3C76B5C" , "10.1.0.133" , "Radiator Livingroom 1           " ] , 
-	[ "R01" , 0 , "OFF" , "NO" , "4" ,  "0" , "0" , "-" , "500" , "--" , "400" , "A085E3C76B5C" , "192.168.128.204" , "Radiator Livingroom 2           " ] , 
-	[ "R02" , 0 , "OFF" , "NO" , "5" ,  "0" , "0" , "-" , "150" , "--" , "50" , "A085E3C76B5C" , "192.168.128.205" , "Radiator kitchen                " ] , 
-	[ "R03" , 0 , "OFF" , "NO" , "6" ,  "0" , "0" , "-" , "100" , "--" , "400" , "A085E3C76B5C" , "192.168.128.206" , "Radiator Guest Room             " ] , 
-	[ "R04" , 0 , "OFF" , "NO" , "7" ,  "0" , "0" , "-" , "100" , "--" , "400" , "A085E3C76B5C" , "192.168.128.207" , "Radiator Guest2 Room            " ] , 
-	[ "R05" , 0 , "OFF" , "NO" , "8" ,  "0" , "0" , "-" , "140" , "--" , "400" , "A085E3C76B5C" , "192.168.128.208" , "Radiator Master Bed Room        " ] , 
-	[ "R06" , 0 , "OFF" , "NO" , "9" ,  "0" , "0" , "-" , "140" , "--" , "400" , "A085E3C76B5C" , "192.168.128.209" , "Radiator Master Bed Room        " ] , 
-	[ "R07" , 0 , "OFF" , "NO" , "10" , "0" , "0" , "-" , "050" , "--" , "400" , "A085E3C76B5C" , "192.168.128.210" , "Radiator Apartment Living Room " ] , 
-	[ "R08" , 0 , "OFF" , "NO" , "11" , "0" , "0" , "-" , "050" , "--" , "400" , "A085E3C76B5C" , "192.168.128.211" , "Radiator Apartment Bed Room    " ] , 
-	[ "R09" , 0 , "OFF" , "NO" , "12" , "0" , "0" , "-" , "300" , "--" , "400" , "A085E3C76B5C" , "192.168.128.212" , "Radiator Apartment Bath Room   " ] , 
-	[ "R10" , 0 , "OFF" , "NO" , "13" , "0" , "0" , "-" , "070" , "--" , "400" , "A085E3C76B5C" , "192.168.128.213" , "Radiator Upstairs Hall Way      " ] , 
-	[ "R11" , 0 , "OFF" , "NO" , "14" , "0" , "0" , "-" , "350" , "--" , "400" , "A085E3C76B5C" , "192.168.128.214" , "Radiator Downstairs Bath Room   " ] , 
-	[ "R12" , 0 , "OFF" , "NO" , "15" , "0" , "0" , "-" , "350" , "--" , "400" , "A085E3C76B5C" , "192.168.128.215" , "Radiator Upstairs Bath Room     " ] , 
-	[ "S01" , 0 , "OFF" , "NO" , "16" , "0" , "0" , "-" , "200" , "12" , "000" , "A085E3C76B5C" , "192.168.128.216" , "Sensor Apartment Bathroom       " ] , 
-	[ "S02" , 0 , "OFF" , "YES" , "17" , "0" , "0" , "-" , "200" , "03" , "000" , "A085E3C76B5C" , "10.1.0.133" , "Sensor Living Room              " ] , 
-	[ "S03" , 0 , "OFF" , "NO" , "18" , "0" , "0" , "-" , "200" , "15" , "000" , "A085E3C76B5C" , "192.168.128.218" , "Sensor Upstairs Bathroom        " ] , 
+	[ "WH0" , 0 , "OFF" , "NO" , "0" ,  "0" , "0" , "-" , "300" , "--" , "600" , "A085E3C76B5C" , "192.168.128.201" , "Water Heater down stairs - A" ] ,
+	[ "WH1" , 0 , "OFF" , "YES" , "1" ,  "0" , "0" , "-" , "400" , "--" , "1290" , "CCBA97C90BAC" , "192.168.128.202" , "Water Heater up stairs - I" ] , 
+	[ "WH2" , 0 , "OFF" , "NO" , "2" ,  "0" , "0" , "-" , "100" , "--" , "1100" , "A085E3BE75C4" , "192.168.128.203" , "Water Heater Apartment - I" ] , 
+	[ "R00" , 0 , "OFF" , "NO" , "3" ,  "0" , "0" , "-" , "500" , "--" , "100" , "A085E3C732F0" , "192.168.128.204" , "Radiator Livingroom 1 - A" ] , 
+	[ "R01" , 0 , "OFF" , "NO" , "4" ,  "0" , "0" , "-" , "500" , "--" , "400" , "A085E3C71DFC" , "192.168.128.205" , "Radiator Livingroom 2 - A" ] , 
+	[ "R02" , 0 , "OFF" , "NO" , "5" ,  "0" , "0" , "-" , "150" , "--" , "50" , "A085E3C7DC10" , "192.168.128.206" , "Radiator kitchen - A" ] , 
+	[ "R03" , 0 , "OFF" , "NO" , "6" ,  "0" , "0" , "-" , "100" , "--" , "400" , "CCBA97C8FD64" , "192.168.128.207" , "Radiator Guest Room - A" ] , 
+	[ "R04" , 0 , "OFF" , "NO" , "7" ,  "0" , "0" , "-" , "100" , "--" , "400" , "A085E3BF647C" , "192.168.128.208" , "Radiator Cody Room - A" ] , 
+	[ "R05" , 0 , "OFF" , "NO" , "8" ,  "0" , "0" , "-" , "140" , "--" , "1260" , "A085E3C8697C" , "192.168.128.209" , "Radiator Master Bed Room L. - I" ] , 
+	[ "R06" , 0 , "OFF" , "NO" , "9" ,  "0" , "0" , "-" , "140" , "--" , "1260" , "CCBA97C90B9C" , "192.168.128.210" , "Radiator Master Bed Room R. - I" ] , 
+	[ "R07" , 0 , "OFF" , "NO" , "10" , "0" , "0" , "-" , "050" , "--" , "1100" , "CCBA97C8FC38" , "192.168.128.211" , "Radiator Apartment Liv. Room - I" ] , 
+	[ "R08" , 0 , "OFF" , "NO" , "11" , "0" , "0" , "-" , "050" , "--" , "800" , "A085E3C751A8" , "192.168.128.212" , "Radiator Apartment Bed Room - I" ] , 
+	[ "R09" , 0 , "OFF" , "NO" , "12" , "0" , "0" , "-" , "300" , "--" , "400" , "A085E3C76B5C" , "192.168.128.213" , "Radiator Apartment Bath Room - A" ] , 
+	[ "R10" , 0 , "OFF" , "NO" , "13" , "0" , "0" , "-" , "070" , "--" , "400" , "CCBA97C8FE80" , "192.168.128.214" , "Radiator Upstairs Hall Way - A" ] , 
+	[ "R11" , 0 , "OFF" , "NO" , "14" , "0" , "0" , "-" , "350" , "--" , "400" , "A085E3C7D02C" , "192.168.128.215" , "Radiator Downstairs Bath R. - A" ] , 
+	[ "R12" , 0 , "OFF" , "NO" , "15" , "0" , "0" , "-" , "350" , "--" , "400" , "A085E3C8E1FC" , "192.168.128.216" , "Radiator Upstairs Bath Room - A" ] , 
+	[ "S01" , 0 , "OFF" , "NO" , "16" , "0" , "0" , "-" , "300" , "14" , "000" , "A085E3C76B5C" , "192.168.128.201" , "Sensor Waterheater down stairs - A" ] , 
+	[ "S02" , 0 , "OFF" , "YES" , "17" , "0" , "0" , "-" , "200" , "08" , "000" , "A085E3C76B5C" , "192.168.128.202" , "Sensor WaterHeater up stairs - I" ] , 
+	[ "S03" , 0 , "OFF" , "YES" , "18" , "0" , "0" , "-" , "200" , "12" , "000" , "A085E3C76B5C" , "192.168.128.203" , "Sensor Waterheater Apartment - I" ] , 
+	[ "S04" , 0 , "OFF" , "YES" , "19" , "0" , "0" , "-" , "200" , "15" , "000" , "CCBA97C8FC38" , "192.168.128.211" , "Sensor Apartment Liv. Room - I" ] , 
+	[ "S05" , 0 , "OFF" , "NO" , "20" , "0" , "0" , "-" , "200" , "15" , "000" , "A085E3C76B5C" , "192.168.128.218" , "Sensor 02 - " ] , 
+	[ "S06" , 0 , "OFF" , "NO" , "21" , "0" , "0" , "-" , "200" , "15" , "000" , "A085E3C76B5C" , "192.168.128.218" , "Sensor 03 - " ] , 
+	[ "S07" , 0 , "OFF" , "NO" , "22" , "0" , "0" , "-" , "200" , "15" , "000" , "A085E3C76B5C" , "192.168.128.218" , "Sensor 04 - " ] , 
 ]
 #
 #DEBUG = True
@@ -190,7 +143,7 @@ STATUS        = int("2")
 TIMEON        = int("1")
 ITEM          = int("0")
 #
-token = "eyJ....bla....bla....7ea4wkng"
+token = "eyJraWQiOiI-----7ea4wkng"
 #
 # Envoy IP
 #
@@ -205,24 +158,25 @@ urlc = "https://192.168.128.63/api/v1/consumption"
 # http://envoy.local/home
 #
 #https://entrez.enphaseenergy.com/
-#System: xxxx9
-#SN: Gateway:4xxxxxxx9
-#Token=eyJr...bla....bal...wkng
+#System: GEL
+#SN: Gateway:482
+#Token= 
+#eyJraWQiOi------ea4wkng
 #
 # Test
 #
 #curl -f -k -H 'Accept: application/json' -H 'Authorization: Bearer {token}' -X GET https://{my_ipaddress}/api/v1/production/inverters
 #
-#curl -f -k -H 'Accept: application/json' -H 'Authorization: Bearer e...bla...bla...bla..wkng' -X GET https://192.168.128.63/api/v1/production/inverters
+#curl -f -k -H 'Accept: application/json' -H 'Authorization: Bearer eyJraWQiOiI3ZD-----R7ea4wkng' -X GET https://192.168.128.63/api/v1/production/inverters
 #
-#gelbrio@OrfMacBookAir ~ % curl -f -k -H 'Accept: application/json' -H 'Authorization: Bearer e..blO..bla...bla...bla...wkng' -X GET https://192.168.128.63/api/v1/production
+#gelbrio@OrfMacBookAir ~ % curl -f -k -H 'Accept: application/json' -H 'Authorization: Bearer eyJraWQiOiI------7ea4wkng' -X GET https://192.168.128.63/api/v1/production
 #{
 #  "wattHoursToday": 9580,
 #  "wattHoursSevenDays": 224811,
 #  "wattHoursLifetime": 1532475,
 #  "wattsNow": 1442
 #}
-#gelbrio@OrfMacBookAir ~ % curl -f -k -H 'Accept: application/json' -H 'Authorization: Bearer e..blla...bla..wkng' -X GET https://192.168.128.63/api/v1/consumption
+#gelbrio@OrfMacBookAir ~ % curl -f -k -H 'Accept: application/json' -H 'Authorization: Bearer eyJraWQiOiI3Z------7ea4wkng' -X GET https://192.168.128.63/api/v1/consumption
 #{
 #  "wattHoursToday": 2084,
 #  "wattHoursSevenDays": 0,
@@ -547,7 +501,7 @@ def getItemTemp(ip,rr):
 				data = response.json()
 				#if ture must be a sensor
 				#making sure it is a sensor in the matrix
-				if data['temperature:100']['tC'] and re.match(pattern, matrix1[int(rr)][ITEM]):
+				if re.match(pattern, matrix1[int(rr)][ITEM]) and data['temperature:100']['tC']:
 					temperatureC100 = data['temperature:100']['tC']
 					if DEBUG:
 						print(f"Temperature in C: {temperatureC100}")
@@ -760,19 +714,23 @@ def main():
 					globalConsumption = getConsumption()
 					write2file(f"{now} Production: {globalProduction} Consumption: {globalConsumption} + {matrix1[r][WATTRATED]}\n")
 					if int(globalProduction) > int(globalConsumption) + int(matrix1[r][WATTRATED]):
-						print("Production: %10s Consumption: %10s " % ( globalProduction ,  globalConsumption))
+						print("Production: %10s is greater then Consumption: %10s + Reserved Watt %10s  for %10s" % ( globalProduction ,  globalConsumption , int(matrix1[r][WATTRATED]) , matrix1[r][LONGNAME] ))
 						print(f"Checking if {YELLOW}%s{RESET} status can be changed?" %  (matrix1[r][LONGNAME]))
 						if matrix1[r][STATUS] == "ON":
-							print("Item %s is alread on - nothing to do" % (matrix1[r][LONGNAME]))
+							if DEBUG:
+								print("Item %s is alread on - nothing to do" % (matrix1[r][LONGNAME]))
 							matrix1[r][TIMEON] = str(int(matrix1[r][TIMEON]) + int(sleepnumber))
+							matrix1[r][CURRENTWATT] = getItemConsumption(matrix1[r][IP]) 
 						else:
 							print("Turning ON %s " % (matrix1[r][LONGNAME]))
 							matrix1[r][STATUS] ="ON" 
 							turnBreakerON(matrix1[r][IP])
 							matrix1[r][CURRENTWATT] = getItemConsumption(matrix1[r][IP]) 
 					else:
+						print("Production: %10s is less then Consumption: %10s + Reserved Watt %10s  for %10s" % ( globalProduction ,  globalConsumption , int(matrix1[r][WATTRATED]) , matrix1[r][LONGNAME] ))
 						if matrix1[r][STATUS] == "OFF":
-							print("Item %s is alread off - nothing to do" % (matrix1[r][LONGNAME]))
+							if DEBUG:
+								print("Item %s is alread off - nothing to do" % (matrix1[r][LONGNAME]))
 						else:		
 							print("Turning OFF %s " % (matrix1[r][LONGNAME]))
 							matrix1[r][STATUS] ="OFF" 
@@ -822,7 +780,6 @@ def main():
 
 # call main
 main()
-
 
 
 ```
