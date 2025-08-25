@@ -784,4 +784,19 @@ main()
 
 ```
 
+# Crontab 
+
+```
+sudo crontab -l
+
+@reboot cd /home/gelbrio && /usr/bin/python3 /home/gelbrio/savemoney.py > /home/gelbrio/screenlog 2>&1
+```
+
+# Watch the Execution
+
+```
+
+tail -f screenlog
+
+```
 
